@@ -85,3 +85,16 @@ class Cruiser(Ship):
         print(f'{self.chell} человек на борту ')
 
     
+class Money:
+    def __init__(self, dollars, cents):
+        self.dollars = dollars
+        self.cents = cents
+
+    def display_amount(self):
+        print(f'${self.dollars}.{self.cents:02}')
+
+    def set_dollars(self, value):
+        self.dollars = value
+
+    def set_cents(self, value):
+        self.cents = value
